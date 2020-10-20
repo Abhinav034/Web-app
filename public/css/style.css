@@ -62,3 +62,11 @@ footer{
     color: grey;
     font-size: large;
 }
+
+p{
+    text-align: center;
+    font-family: optima;
+    font-size: 30px;
+    margin-top: 5%;
+    color: teal;
+}
