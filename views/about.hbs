@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>{{title}}</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class='main-div'>
+        {{>header}}
+
+       <div class="form-div">
+        <form>
+        <input type="number" id='amount' placeholder="Enter amount">
+        <select name="from" id="from">
+             <option value="USD">USD</option>
+             <option value="CAD">CAD</option>
+             <option value="EUR">EUR</option>
+             <option value="JPY">YEN</option>
+             <option value="INR">INR</option>
+        </select>
+        <label style="font-size: 20px; font-family:optima" > to </label>
+        <select name="to" id="to">
+             <option value="USD">USD</option>
+             <option value="CAD">CAD</option>
+             <option value="EUR">EUR</option>
+             <option value="JPY">YEN</option>
+             <option value="INR">INR</option>
+        </select>
+        
+        <button>Convert</button>
+         </form>
+
+         <p id="result" ></p>
+       </div>
+       
+    </div>
+       
+    {{>footer}}
+    <script src="/js/currency.js"></script>
+</body>
+
+
+</html>

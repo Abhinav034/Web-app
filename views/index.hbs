@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>{{title}}</title>
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <div class='main-div'>
+        {{>header}}
+
+       <div class="form-div">
+            <form>
+
+        <input id="inputText" type="text" placeholder="Enter a city">
+
+        <button>Search</button>
+
+        <p id="forecast"></p>
+        <p id='location'></p>
+        </form>
+       </div>
+
+    </div>
+
+    {{>footer}}
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

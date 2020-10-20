@@ -1,0 +1,64 @@
+header{
+    color: cornflowerblue;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    font-family: optima;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+  
+}
+.main-div{
+    flex-grow: 1;
+
+}
+.form-div{
+margin-top: 5%;
+text-align: center;
+
+}
+#forecast{
+font-family: optima;
+font-size: x-large;
+color: slategray;
+}
+#location{
+font-family: optima;
+font-size: large;
+color: steelblue;
+}
+
+header a{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: optima;
+   
+}
+header a:hover{
+    color: red;
+}
+
+#inputText , #amount , #from , #to{
+padding: 10px;
+font-family: optima;
+}
+button{
+    padding: 9px;
+    font-size: 15px;
+    font-family: optima;
+    color: steelblue;
+}
+
+footer{
+    border-top: 1.5px solid grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 200px auto;
+    color: grey;
+    font-size: large;
+}
