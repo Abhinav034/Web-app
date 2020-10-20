@@ -4,7 +4,7 @@ const hbs = require('hbs')
 const geocode = require('./Utils/geocode')
 const weather = require('./Utils/weather')
 const currencyCoverter = require('./Utils/currency')
-
+const port = process.env.PORT || 3000
 const app = express()
 
 // paths in the folders
@@ -107,6 +107,6 @@ app.get('*' , (req , res)=>{
 
 })
 
-app.listen(3000 , ()=>{
-console.log('server started')
+app.listen(port , ()=>{
+console.log(`server started at port: ${port}`)
 })

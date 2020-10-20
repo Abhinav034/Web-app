@@ -8,7 +8,7 @@ document.querySelector('form').addEventListener('submit' , (e)=>{
 
     const inputValue = `${from.value}_${to.value}`
     
-    fetch(`http://localhost:3000/currency?convert=${inputValue}`).then((response)=>{
+    fetch(`/currency?convert=${inputValue}`).then((response)=>{
         response.json().then((data)=>{
             if (data.error){
               return  p.innerHTML = data.error
@@ -18,9 +18,4 @@ document.querySelector('form').addEventListener('submit' , (e)=>{
            
         })
     })
-
-    // console.log(input.value)
-    // console.log(from.value)
-    // console.log(to.value)
-
 })

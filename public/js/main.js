@@ -5,7 +5,7 @@
  document.querySelector('form').addEventListener('submit' , (e)=>{
     e.preventDefault()
       
-       fetch(`http://localhost:3000/weather?address=${input.value}`).then((response)=>{
+       fetch(`/weather?address=${input.value}`).then((response)=>{
            
                // forecast.textContent = 'Loading...'
                 location.textContent = ''
