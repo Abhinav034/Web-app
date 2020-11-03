@@ -4,7 +4,7 @@ const hbs = require('hbs')
 const geocode = require('./Utils/geocode')
 const weather = require('./Utils/weather')
 const currencyCoverter = require('./Utils/currency')
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8080
 const app = express()
 
 // paths in the folders
